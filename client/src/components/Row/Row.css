@@ -14,7 +14,7 @@
 }
 .row-poster{
     border-radius: 10px;
-    max-height: 350px;
+    max-height: 300px;
     object-fit: contain;
     margin-right: 10px;
     width: 100%;
