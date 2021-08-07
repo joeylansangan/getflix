@@ -1,0 +1,58 @@
+.App{
+  background-color: #151515;
+  min-height: 100vh;
+}
+
+/* flex */
+.flex{
+  display: flex;
+}
+.justify-center{
+  justify-content: center;
+}
+.s-between{
+  justify-content: space-between;
+}
+.align-center{
+  align-items: center;
+}
+.align-end{
+  align-items: flex-end;
+}
+.flex-column{
+  flex-direction: column;
+}
+.flex-row{
+  flex-direction: row;
+}
+
+/* padding */
+.tb-10{
+  padding: 10px 0px;
+}
+.tb-5{
+  padding: 5px 0px;
+}
+.lr-40{
+  padding: 0px 40px;
+}
+
+/* margin */
+.ml-5{
+  margin-left: 5px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.mr-30{
+  margin-right: 30px;
+}
+
+/* text */
+a{
+  text-decoration: none;
+  color: white;
+}
