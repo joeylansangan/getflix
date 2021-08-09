@@ -1,3 +1,5 @@
+import firebase from 'firebase';
+
 const firebaseConfig = {
     apiKey: "AIzaSyDs-96IAa8mB9PSofu16QpsCNLPJp2glEI",
     authDomain: "getflix-7e68c.firebaseapp.com",
@@ -8,4 +10,9 @@ const firebaseConfig = {
     measurementId: "G-JCTVTYPMXQ"
   };
 
-  
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const auth = firebase.auth();
+
+export { auth };
+export default db;

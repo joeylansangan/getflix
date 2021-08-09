@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
+import { AiOutlineRight } from "react-icons/ai";
+
 import './LoginScreen.css'
+
 import SignUpScreen from './SignUpScreen'
 
 function LoginScreen() {
@@ -29,9 +32,9 @@ function LoginScreen() {
                                     <input className="loginScreen-inputBox" type="email" placeholder="Email Address" />
                                     <button 
                                         onClick={() => setSignIn(true)}
-                                        className="loginScreen-signin"
+                                        className="loginScreen-signin flex"
                                     >
-                                    GET STARTED</button>
+                                    GET STARTED <AiOutlineRight className="ml-10"/></button>
                                 </form>
                             </div>
                         </>
