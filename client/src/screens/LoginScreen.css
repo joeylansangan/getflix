@@ -1,0 +1,76 @@
+.loginScreen{
+    position: relative;
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80") center no-repeat;
+    background-size: cover;
+}
+.loginScreen-bg{
+    height: 100vh;
+    background: radial-gradient(circle, rgba(8,8,8,0.4948354341736695) 0%, rgba(21,21,21,0.8981967787114846) 70%);
+}
+.loginScreen-nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.loginScreen-logo{
+    margin: 20px;
+    object-fit: contain;
+    width: 150px;
+}
+.loginScreen-button{
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.loginScreen-content{
+    width: 100%;
+    color: white;
+}
+.loginScreen-content > h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.loginScreen-content > h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.loginScreen-content > h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.loginScreen-input{
+    width: 100%;
+}
+.loginScreen-input > form {
+    width: 100%;
+}
+.loginScreen-inputBox{
+    width: 30%;
+    padding: 10px;
+    outline-width: 0;
+    height: 30px;
+    border: none;
+    max-width: 600px;
+}
+.loginScreen-signin{
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #e50914;
+    border: none;
+}
+
+@media only screen and (max-width: 600px){
+    .loginScreen-content{
+        margin: 20px;
+    }
+    .loginScreen-content > h1 {
+        font-size: 2.5rem;
+    }
+}
