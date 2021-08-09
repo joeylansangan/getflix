@@ -1,0 +1,78 @@
+.profileScreen{
+    color: white;
+    height: 100vh;
+}
+.profileScreen-body{
+    width: 60%;
+    max-width: 750px;
+    height: 100%;
+}
+.profileScreen-body > h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: left;
+    margin: 20px 0px;
+    
+}
+.profileScreen-info{
+    width: 100%;
+    border-top: solid .5px #333;
+    border-bottom: solid .5px #333;
+}
+.profileScreen-avatar{
+    align-self: flex-start;
+    border-radius: 4px;
+    width: 8vw;
+    height: 8vw;
+}
+.profileScreen-details{
+    width: 100%;
+}
+.profileScreen-user {
+    font-weight: 500;
+    background-color: #666;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.profileScreen-signOut{
+    width: 100%;
+    color: white;
+    background-color: #e50914;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+.profileScreen-plans{
+    border-top: solid .5px #333;
+}
+.profileScreen-plan{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.plan-subscribe{
+    font-weight: 600;
+    color: white;
+    background-color: #e50914;
+}
+.plan-current{
+    color: white;
+    background-color: #666;
+}
+
+@media only screen and (max-width: 600px){
+    .profileScreen-body{
+        width: 90%;
+    }
+    .profileScreen-body > h1{
+        font-size: 2rem;
+    }
+    .profileScreen-avatar{
+        width: 12vw;
+        height: 12vw;
+    }
+    .profileScreen-details > h2{
+        font-size: 1.2rem;
+    }
+}

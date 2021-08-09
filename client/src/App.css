@@ -27,6 +27,9 @@
 }
 
 /* padding */
+.tb-20{
+  padding: 20px 0px;
+}
 .tb-10{
   padding: 10px 0px;
 }
@@ -68,7 +71,12 @@
 .mr-30{
   margin-right: 30px;
 }
-
+.mt-10{
+  margin-top: 10px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
 /* text */
 .txt-center{
   text-align: center;
@@ -90,5 +98,11 @@ a{
   color: gray;
 }
 .pointer{
+  cursor: pointer;
+}
+
+/* button */
+button{
+  border: none;
   cursor: pointer;
 }

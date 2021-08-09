@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {useHistory} from 'react-router-dom';
 import { AiFillCaretDown} from "react-icons/ai";
 
 import './Nav.css';
@@ -6,6 +7,8 @@ import './Nav.css';
 function Nav(){
 
     const [show, handleShow] = useState(false);
+    const history = useHistory();
+
     const transitionNavBar = () => {
         if (window.scrollY > 100){
             handleShow(true);
@@ -24,6 +27,7 @@ function Nav(){
             <div className="nav-contents flex s-between align-center">
                 <div className="flex align-center">
                     <img 
+                        onClick={() => history.push("/")}
                         className='nav-logo mr-30'
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" 
                         alt="netflix"
@@ -32,9 +36,10 @@ function Nav(){
                    
                 </div>
                 <img 
-                        className='nav-avatar'
-                        src="https://ih0.redbubble.net/image.618363037.0853/flat,1000x1000,075,f.u2.jpg" 
-                        alt="avatar"
+                    onClick={() => history.push("/profile")}
+                    className='nav-avatar'
+                    src="https://ih0.redbubble.net/image.618363037.0853/flat,1000x1000,075,f.u2.jpg" 
+                    alt="avatar"
                     />
             </div>
 
