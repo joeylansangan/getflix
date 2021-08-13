@@ -1,0 +1,33 @@
+.profileScreen-plans{
+    border-top: solid .5px #333;
+}
+.profileScreen-plan{
+    padding: 0px 20px;
+    filter: opacity(.8);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    transition: all ease-in .2s;
+}
+.profileScreen-plan:hover{
+    filter: opacity(1)
+}
+.plan-subscribe{
+    font-weight: 600;
+    color: white;
+    background-color: #e50914;
+}
+.plan-current{
+    color: white;
+    background-color: #666;
+}
+
+.profileScreen-plan-disabled > button{
+    background-color: gray;
+}
+.current-plan{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid .5px #333;
+}

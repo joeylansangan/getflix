@@ -29,6 +29,16 @@ function Row({title, fetchUrl, isLargeRow = false}){
                         src={`${base_url}${movie.poster_path}`}
                         alt={movie.name}
                     />
+                )}
+            </div>
+        </div>
+    )
+}
+
+export default Row;
+
+
+
                 // (isLargeRow && movie.poster_path) || (!isLargeRow && movie.backdrop_path &&(
                 //     <img
                 //         className={`row-poster ${isLargeRow && "row-posterLarge"}`}
@@ -39,10 +49,3 @@ function Row({title, fetchUrl, isLargeRow = false}){
                 //         alt={movie.name}
                 //     />
                 // ))
-                )}
-            </div>
-        </div>
-    )
-}
-
-export default Row;

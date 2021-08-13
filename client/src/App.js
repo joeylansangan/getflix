@@ -39,8 +39,8 @@ function App() {
         <LoginScreen /> 
         ) : (
         <Switch>
-          <Route exact path="/"><HomeScreen/></Route>
-          <Route exact path="/profile"><ProfileScreen /></Route>
+          <Route exact path="/" component={HomeScreen}></Route>
+          <Route exact path="/profile" component={ProfileScreen}></Route>
         </Switch>
         )}
     </Router>

@@ -5,6 +5,7 @@ import { selectUser } from '../features/userSlice';
 import Nav from '../components/Nav/Nav';
 import './ProfileScreen.css';
 import { auth } from '../firebase';
+import Plans from '../components/Plans/Plans';
 
 function ProfileScreen() {
     const user = useSelector(selectUser);
@@ -22,41 +23,15 @@ function ProfileScreen() {
                     />
                     <div className="profileScreen-details">
                         <h3 className="profileScreen-user">{user.email}</h3>
-                        <h2 className="mb-20">Plans (Current Plan: Premium)</h2>
-                        <div className="profileScreen-plans tb-20">
-                            <span >Renewal date: 09/21/2021 </span>
-                            <div className="profileScreen-plan">
-                                <div className="flex flex-column">
-                                    <span>Netflix Standard</span>
-                                    <span>1080p</span>
-                                </div>
-                                <button className="plan-subscribe">Subscribe</button>
-                            </div>
-                            <div className="profileScreen-plan">
-                                <div className="flex flex-column">
-                                    <span>Netflix Basic</span>
-                                    <span>480p</span>
-                                </div>
-                                <button className="plan-subscribe">Subscribe</button>
-                            </div>
-                            <div className="profileScreen-plan">
-                                <div className="flex flex-column">
-                                    <span>Netflix Premium</span>
-                                    <span>4k+HDR</span>
-                                </div>
-                                <button className="plan-current bold">Current Package</button>
-                            </div>
-                            <button
+                        <Plans/>
+                        <button
                                 onClick={() => auth.signOut()}
                                 className="profileScreen-signOut mt-10 bold"
                             >
                             Sign Out
                             </button>
-                        </div>
                     </div>
                 </div>
-              
-
             </div>
         </div>
     )

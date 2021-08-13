@@ -41,25 +41,12 @@
     background-color: #e50914;
     padding: 10px 20px;
     font-size: 1rem;
+    transition: all .5s ease-in-out;
 }
-.profileScreen-plans{
-    border-top: solid .5px #333;
+.profileScreen-signOut:hover{
+    filter: brightness(150%);
 }
-.profileScreen-plan{
-    padding: 0px 20px;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0px;
-}
-.plan-subscribe{
-    font-weight: 600;
-    color: white;
-    background-color: #e50914;
-}
-.plan-current{
-    color: white;
-    background-color: #666;
-}
+
 
 @media only screen and (max-width: 600px){
     .profileScreen-body{
