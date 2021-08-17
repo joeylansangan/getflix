@@ -44,7 +44,7 @@
     transition: all .5s ease-in-out;
 }
 .profileScreen-signOut:hover{
-   
+   cursor: pointer;
     filter: brightness(150%);
 }
 
