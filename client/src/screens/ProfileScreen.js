@@ -18,7 +18,7 @@ function ProfileScreen() {
                 <div className="profileScreen-info flex tb-20 align-center">
                     <img 
                         className="profileScreen-avatar mr-20"
-                        src="https://ih0.redbubble.net/image.618363037.0853/flat,1000x1000,075,f.u2.jpg"
+                        src="https://external-preview.redd.it/0dTT-3SprPcsNCqo1GTCI-nqGM9EdZYwqyYr_pZ-baE.jpg?auto=webp&s=a1e8532d326f5aa122df2f31694bf142f117fc06"
                         alt="avatar"
                     />
                     <div className="profileScreen-details">

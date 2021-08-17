@@ -38,13 +38,15 @@
 .profileScreen-signOut{
     width: 100%;
     color: white;
-    background-color: #e50914;
+    background-color: #00a99d;
     padding: 10px 20px;
     font-size: 1rem;
     transition: all .5s ease-in-out;
 }
 .profileScreen-signOut:hover{
+   
     filter: brightness(150%);
+    cursor: pointer;
 }
 
 

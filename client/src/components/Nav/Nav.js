@@ -29,7 +29,7 @@ function Nav(){
                     <img 
                         onClick={() => history.push("/")}
                         className='nav-logo mr-30'
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" 
+                        src="./getflix.png" 
                         alt="netflix"
                     />
                     <a href="/" className="nav-browse mr-20 flex align-end s-between">Browse<AiFillCaretDown className="ml-10"/></a>
@@ -38,7 +38,7 @@ function Nav(){
                 <img 
                     onClick={() => history.push("/profile")}
                     className='nav-avatar'
-                    src="https://ih0.redbubble.net/image.618363037.0853/flat,1000x1000,075,f.u2.jpg" 
+                    src="https://external-preview.redd.it/0dTT-3SprPcsNCqo1GTCI-nqGM9EdZYwqyYr_pZ-baE.jpg?auto=webp&s=a1e8532d326f5aa122df2f31694bf142f117fc06" 
                     alt="avatar"
                     />
             </div>
