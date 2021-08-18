@@ -1,15 +1,16 @@
 import React, {useState, useEffect} from 'react'
-import { useSelector } from 'react-redux';
-import { selectUser } from '../../features/userSlice';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectUser, subscribe } from '../../features/userSlice';
 import { loadStripe } from '@stripe/stripe-js';
 import db from '../../firebase';
 import './Plans.css';
 
 function Plans() {
+    const dispatch = useDispatch();
     const [products, setProducts] = useState([]);
     const user = useSelector(selectUser);
     const [subscription, setSubscription] = useState(null);
-
+    
     useEffect(() => {
         db.collection('customers')
         .doc(user.uid)
@@ -26,8 +27,11 @@ function Plans() {
         })
     }, [user.uid])
 
-    console.log(subscription)
+    console.log(`subout: ${subscription}`)
+    
     useEffect(() => {
+        console.log('triggered')
+        
         db.collection('products')
         .where('active', '==', true)
         .get()
@@ -48,8 +52,6 @@ function Plans() {
         });
     }, []);
 
-    console.log(products);
-
     const loadCheckout = async (priceId) => {
         const docRef = await db
         .collection('customers')
@@ -67,15 +69,17 @@ function Plans() {
             if (error){
                 alert(`An error occured: ${error.message}`);
             }
-
             if (sessionId){
                 // We have a session, redirect to Checkout
-
                 const stripe = await loadStripe('pk_test_51Hi1tfJNaaSkDpvrwxP1N7iVmv7qvvHMwC1IDCHeqHaOQalEDaDYNnvobuxn1R7nyvacA3SfZcXsHpJNWmqcgcI700MlFqrq3R')
                 stripe.redirectToCheckout({ sessionId })
             }
         })
     }
+
+    useEffect(() => {
+        dispatch(subscribe(subscription))
+    }, [subscription])
 
     return (
         <div className="plans-wrap">

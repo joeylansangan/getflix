@@ -1,11 +1,10 @@
 import React, {useState, useRef} from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { auth } from '../firebase';
 import './SignUpScreen.css';
 
 function SignUpScreen() {
 
-    const [screen, setScreen] = useState(true);
+    // const [screen, setScreen] = useState(true);
 
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
