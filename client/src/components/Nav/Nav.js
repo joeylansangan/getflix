@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {useHistory} from 'react-router-dom';
+import {useHistory, Link} from 'react-router-dom';
 import { AiFillCaretDown} from "react-icons/ai";
 
 import './Nav.css';
@@ -32,7 +32,7 @@ function Nav(){
                         src="./getflix.png" 
                         alt="netflix"
                     />
-                    <a href="/" className="nav-browse mr-20 flex align-end s-between">Browse<AiFillCaretDown className="ml-10"/></a>
+                    <Link to="/" className="nav-browse mr-20 flex align-end s-between">Browse<AiFillCaretDown className="ml-10"/></Link>
                    
                 </div>
                 <img 

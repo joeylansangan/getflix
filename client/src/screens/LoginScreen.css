@@ -52,13 +52,14 @@
 }
 .loginScreen-inputBox{
     width: 30%;
-    padding: 10px;
+    padding: 13px 10px;
     outline-width: 0;
     height: 30px;
     border: none;
     max-width: 600px;
 }
 .loginScreen-signin{
+    align-items: center;
     padding: 16px 20px;
     font-size: 1rem;
     color: white;

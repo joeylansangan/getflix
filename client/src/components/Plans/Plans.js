@@ -27,7 +27,7 @@ function Plans() {
         })
     }, [user.uid])
 
-    console.log(`subout: ${subscription}`)
+    // console.log(`subout: ${subscription}`)
     
     useEffect(() => {
         console.log('triggered')

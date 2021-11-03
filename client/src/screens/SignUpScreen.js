@@ -44,7 +44,7 @@ function SignUpScreen() {
                         <label className="checkbox-label" >Remember me</label>
                     </div>
 
-                    <span className="txt-left mtb-30 gray">New to Netflix? <span className="signUpNow pointer" onClick={register}> Sign Up now</span></span>
+                    <span className="txt-left mtb-30 gray">New to Getflix? <span className="signUpNow pointer" onClick={register}> Sign Up now</span></span>
                 </form>
         </div>
     )
