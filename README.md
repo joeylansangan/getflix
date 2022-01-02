@@ -1,9 +1,10 @@
 # Getflix Video Streaming App
+This application is fully mobile responsive complete with secure Authentication and integrated with Stripe subscription API utilizing React hooks and Redux.
 
-![Landing Page](/public/assets/screen1.png)
-![Authentication Page](/public/assets/screen2.png)
-![Hero Page](/public/assets/screen1.png)
-![Profile Page](/public/assets/screen2.png)
+![Landing Page](/client/public/assets/screen1.png)
+![Authentication Page](/client/public/assets/screen2.png)
+![Hero Page](/client/public/assets/screen1.png)
+![Profile Page](/client/public/assets/screen2.png)
 
 ### Demo
 [https://getflixnow.netlify.app/](https://getflixnow.netlify.app/)
@@ -12,9 +13,6 @@
 -Use following credentials to log in to the app:
 -Username: hdplan@gmail.com
 -Password: hdplan123
-
-Bootstrapped with [Create React App](https://github.com/facebook/create-react-app), this application is fully mobile responsive complete with secure Authentication, integrated with Stripe subscription API utilizing React hooks and Redux.
-
 
 ## Table of contents
 1. [Technologies used](#technologies-used)
