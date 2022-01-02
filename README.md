@@ -3,8 +3,8 @@ This application is fully mobile responsive complete with secure Authentication 
 
 ![Landing Page](/client/public/assets/screen1.png)
 ![Authentication Page](/client/public/assets/screen2.png)
-![Hero Page](/client/public/assets/screen1.png)
-![Profile Page](/client/public/assets/screen2.png)
+![Hero Page](/client/public/assets/screen3.png)
+![Profile Page](/client/public/assets/screen4.png)
 
 ### Demo
 [https://getflixnow.netlify.app/](https://getflixnow.netlify.app/)
