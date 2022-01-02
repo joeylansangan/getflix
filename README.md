@@ -4,7 +4,7 @@ This application is fully mobile responsive complete with secure Authentication 
 ![Landing Page](/client/public/assets/screen1.png)
 ![Authentication Page](/client/public/assets/screen2.png)
 ![Hero Page](/client/public/assets/screen3.png)
-![Hero Page 2](/client/public/assets/screen4.png)
+![Hero Page 2](/client/public/assets/screen6.png)
 ![Profile Page](/client/public/assets/screen5.png)
 
 ### Demo
